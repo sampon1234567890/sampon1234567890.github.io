@@ -39,7 +39,7 @@ header nav ul li {
 header nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 19.2px; 
 }
 
 .centered-content {
@@ -68,8 +68,6 @@ header nav ul li a {
     line-height: 1.2; 
 }
 
-
-
 .about {
     display: flex;
     flex-direction: column; 
@@ -81,13 +79,13 @@ header nav ul li a {
 }
 
 .about h1 {
-    font-size: 2rem; 
+    font-size: 32px; 
     margin-bottom: 15px; 
     color: white; 
 }
 
 .about p {
-    font-size: 1.1rem;
+    font-size: 17.6px; 
     line-height: 1.6;
     color: white; 
 }
@@ -103,7 +101,6 @@ header nav ul li a {
     border: 3px solid #505C7C;
     margin-bottom: 30px; 
 }
-
 
 .favorites {
     display: flex;
@@ -127,7 +124,6 @@ header nav ul li a {
     margin-bottom: 30px; 
 }
 
-
 .favorites-desc ul {
     list-style-type: none; 
     padding: 0;
@@ -136,16 +132,15 @@ header nav ul li a {
 
 .favorites-desc ul li {
     margin-bottom: 10px; 
-    font-size: 1.1rem;
+    font-size: 17.6px; 
     color: white;
 }
 
 .favorites h1 {
-    font-size: 2rem; 
+    font-size: 32px; 
     margin-bottom: 15px; 
     color: white; 
 }
-
 
 .projects {
     display: flex;
@@ -156,7 +151,6 @@ header nav ul li a {
     padding: 40px 20px;
     margin-bottom: 40px; 
 }
-
 
 .projects-desc {
     display: block;
@@ -172,13 +166,11 @@ header nav ul li a {
     text-align: center; 
 }
 
-
 .projects-desc h1 {
-    font-size: 2rem;
+    font-size: 32px; 
     margin-bottom: 15px; 
     color: white;
 }
-
 
 .projects-desc ul {
     list-style-type: none; 
@@ -186,12 +178,10 @@ header nav ul li a {
     margin: 0;
 }
 
-
 .projects-desc ul li {
     margin-bottom: 10px; 
-    font-size: 1.1rem;
+    font-size: 17.6px; 
 }
-
 
 .talents {
     display: flex;
@@ -202,7 +192,6 @@ header nav ul li a {
     padding: 40px 20px; 
     margin-bottom: 60px; 
 }
-
 
 .talents-desc {
     display: block;
@@ -219,7 +208,7 @@ header nav ul li a {
 }
 
 .talents-desc h1 {
-    font-size: 2rem;
+    font-size: 32px; 
     margin-bottom: 15px; 
     color: white;
 }
@@ -232,9 +221,8 @@ header nav ul li a {
 
 .talents-desc ul li {
     margin-bottom: 10px; 
-    font-size: 1.1rem;
+    font-size: 17.6px; 
 }
-
 
 .contacts {
     display: flex;
@@ -245,7 +233,6 @@ header nav ul li a {
     padding: 40px 20px;
     margin-bottom: 40px; 
 }
-
 
 .contacts-desc {
     display: block;
@@ -261,13 +248,11 @@ header nav ul li a {
     text-align: center;
 }
 
-
 .contacts-desc h1 {
-    font-size: 2rem;
+    font-size: 32px; 
     margin-bottom: 15px; 
     color: white;
 }
-
 
 .contacts-desc ul {
     list-style-type: none; 
@@ -279,12 +264,11 @@ header nav ul li a {
     margin-bottom: 15px; 
 }
 
-
 .contact-link {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.1rem; 
+    font-size: 17.6px; 
     color: white;
     text-decoration: none; 
     padding: 10px;
@@ -292,13 +276,10 @@ header nav ul li a {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-
 .contact-link:hover {
     background-color: #505C7C; 
     color: white;
 }
-
-
 
 .html-activities {
     display: flex;
@@ -309,7 +290,6 @@ header nav ul li a {
     padding: 40px 20px;
     margin-bottom: 40px;
 }
-
 
 .html-activities-desc {
     display: block;
@@ -324,21 +304,20 @@ header nav ul li a {
     text-align: center;
 }
 
-
 .html-activities-desc h1 {
-    font-size: 2rem;
-    margin-bottom: 15px; 
+    font-size: 32px; 
+    margin-bottom: 20px; 
     color: white;
 }
 
-
-.html-activities-desc ul {
-    list-style-type: none; 
-    padding: 0;
-    margin: 0;
-}
-
-.html-activities-desc ul li {
-    margin-bottom: 15px; 
-    font-size: 1.1rem;
+.html-activities a {
+    display: block; 
+    font-size: 19.2px;
+    color: white;
+    text-decoration: none;
+    margin: 10px 0; 
+    padding: 10px;
+    background-color: #505C7C;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; 
 }
