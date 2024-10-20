@@ -382,3 +382,51 @@ header nav ul li a {
     border-radius: 5px;
 }
 
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 15px 0;
+    }
+
+    header nav ul li {
+        margin: 0 10px;
+    }
+
+    header nav ul li a {
+        font-size: 16px; 
+    }
+
+    .centered-image {
+        width: 200px; 
+        height: 200px; 
+    }
+
+    .name h2 {
+        font-size: 18px; 
+    }
+
+    .about-desc,
+    .favorites-desc,
+    .projects-desc,
+    .talents-desc,
+    .contacts-desc,
+    .bonus-desc,
+    .html-activities-desc {
+        width: 80%; 
+    }
+
+    .about h1, .favorites h1, .projects-desc h1, .talents-desc h1, .contacts-desc h1, .bonus-desc h1, .html-activities-desc h1 {
+        font-size: 24px;
+    }
+
+    .about p, .favorites-desc ul li, .projects-desc ul li, .talents-desc ul li, .contacts-desc ul li, .bonus-desc ul li {
+        font-size: 14px;
+    }
+
+    .contact-link {
+        font-size: 14px; 
+    }
+
+    .bonus-video-container {
+        padding-bottom: 75%; 
+    }
+}
