@@ -1,0 +1,55 @@
+/* Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Submission Complete Section */
+#submission-complete {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 500px;
+    margin: 20px;
+}
+
+/* Heading Styling */
+#submission-complete h2 {
+    font-size: 2rem;
+    color: #333333;
+    margin-bottom: 15px;
+}
+
+/* Paragraph Styling */
+#submission-complete p {
+    font-size: 1rem;
+    color: #555555;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+/* Return Link Styling */
+.return-link {
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #007BFF;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+/* Hover Effect for Return Link */
+.return-link:hover {
+    background-color: #0056b3;
+}
