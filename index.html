@@ -4,116 +4,239 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ampon | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Lexend:wght@100..900&family=Righteous&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Lexend:wght@100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Smooth scroll effect for the entire page */
+html {
+    scroll-behavior: smooth;
+}
+
+    </style>
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#favorites">Favorites</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#talents">Talents</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <!-- Icon on the left side -->
+            <div class="logo">
+                <i class="fas fa-code"></i> <!-- Code icon for the logo -->
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="#about"><i class="fas fa-user"></i></a></li> <!-- About icon -->
+                    <li><a href="#projects"><i class="fas fa-laptop-code"></i></a></li> <!-- Projects icon -->
+                    <li><a href="#specialties"><i class="fas fa-cogs"></i></a></li> <!-- Specialties icon -->
+                    <li><a href="#extras"><i class="fas fa-star"></i></a></li> <!-- Extras icon -->
+                    <li><a href="#contact"><i class="fas fa-envelope"></i></a></li> <!-- Contact icon -->
+                </ul>
+            </nav>
+        </div>
     </header>
+    <script src="js/header-scroll.js"></script>
 
-    <section class="centered-content">
-        <img src="https://github.com/sampon1234567890/sampon1234567890.github.io/blob/main/seb.jpg?raw=true" alt="Sebastian Lex F. Ampon" class="centered-image">
-        <div class="name">
-            <h2>Sebastian Lex F. Ampon</h2>
+    <div class="profile-container">
+        <img src="profpic.jpg" alt="Sebastian Lex Ampon" class="profile-image">
+        <div class="text-container">
+            <p id="sname">Sebastian Ampon</p>
+            <p id="title">
+                <span id="dynamic-word-container">
+                    <span id="dynamic-word"></span>
+                    <span id="cursor">|</span>
+                </span>
+            </p>       
+            <script src="js/wordSwap.js"></script>
+            
+            <!-- Social Media Links Section -->
+            <div id="social-media-links">
+                <a href="https://www.facebook.com/sebvstianlex" target="_blank" title="Facebook">
+                    <i class="fab fa-facebook-square"></i>
+                </a>
+                <a href="https://www.instagram.com/vrtlsev/" target="_blank" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://github.com/sampon1234567890" target="_blank" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                
+            </div>
         </div>
-    </section>
+    </div>
     
-    <section id="about" class="about">
-        <div class="about-desc">
-        <h1>About Me</h1>
-        <p>A College Student currently taking a Bachelor of Science in Information Technology. 19 years old. Studies at the University of the Immaculate Conception. Lives in Davao City.</p>
+    
+<!-- About Section -->
+<section id="about">
+    <div class="about-content">
+        <h2 id="about-title">About Me<span class="underline"></span></h2>
+        <div class="about-paragraphs">
+            <!-- First Paragraph Box with User Icon -->
+            <p>
+                <span class="icon"><i class="fas fa-user"></i></span>
+                <span class="content">Hi, I'm Sebastian Lex Ampon, but you can call me Seb! I'm 20 years old and currently a student at the University of the Immaculate Conception in Davao City, Philippines, where I'm pursuing my Bachelor of Science in Information Technology (BSIT).</span>
+            </p>
+            <!-- Second Paragraph Box with Brain Icon -->
+            <p>
+                <span class="icon"><i class="fas fa-brain"></i></span>
+                <span class="content">I have a strong passion for leveraging technology to solve real-world problems, particularly in developing user-friendly systems and applications. I'm enthusiastic about learning new programming languages, exploring cutting-edge technologies, and enhancing my skills in web development and software engineering.</span>
+            </p>
         </div>
-    </section>
+    </div>
+    <!-- Image on the Right Side -->
+    <div class="about-image">
+        <img src="aboutpic.jpg" alt="Your Image">
+    </div>
+</section>
+<script src="js/about_section_animation.js"></script>
 
-    <section id="favorites" class="favorites">
-        <div class="favorites-desc">
-            <h1>Favorites</h1>
 
-            <ul>
-                <li>Coding</li>
-                <li>Web Designing</li>
-                <li>Playing Video Games</li>
-                <li>Listening to Music</li>            
-            </ul>
+
+<!-- Projects Section -->
+<section id="projects">
+    <div class="projects-container">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <!-- Image Squares with Text -->
+            <div class="project-item">
+                <div class="image-container">
+                    <img src="image1.png" alt="Project 1">
+                </div>
+                <div class="project-text">ICTDU Booking Reservation (Java GUI)</div>
+            </div>
+            <div class="project-item">
+                <div class="image-container">
+                    <img src="image2.png" alt="Project 2">
+                </div>
+                <div class="project-text">Oxyfier (Figma UI Design)</div>
+            </div>
+            <div class="project-item">
+                <div class="image-container">
+                    <img src="image3.png" alt="Project 3">
+                </div>
+                <div class="project-text">Reservify (Laboratory Equipment Booking System)</div>
+            </div>
+            <div class="project-item">
+                <div class="image-container">
+                    <img src="image4.png" alt="Project 4">
+                </div>
+                <div class="project-text">Personal Professional Portfolio (HTML, CSS, JS)</div>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
+<script src="js/project_section_animation.js"></script>
 
-    <section id="projects" class="projects"></section>
-        <div class="projects-desc">
-            <h1>Projects</h1>
-            <ul>
-                <li>ICTDU Booking Reservation (Java GUI)</li>
-                <li>Oxyfier (Figma UI Design)</li>
-            </ul>
-        </div>
-    </section>
 
-    <section id="talents" class="talents"></section>
-        <div class="talents-desc">
-            <h1>Talents</h1>
-            <ul>
-                <li>Editing</li>
-                <li>Coding</li>
-                <li>Web Developing</li>
-            </ul>
-        </div>
-    </section>
 
-    <section id="contacts" class="contacts">
-        <div class="contacts-desc">
-            <h1>Contact</h1>       
-            <ul>
-                <li><a href="https://www.facebook.com/sebvstianlex" target="_blank" class="contact-link" style="text-decoration: none; color: white;">
-                    <i class="fab fa-facebook-f" style="font-size: 1.5rem; margin-right: 8px;"></i> Facebook
-                </a></li>
-                <li><a href="https://github.com/sampon1234567890" target="_blank" class="contact-link" style="text-decoration: none; color: white;">
-                    <i class="fab fa-github" style="font-size: 1.5rem; margin-right: 8px;"></i> Github
-                </a></li>
-            </ul>
-        </div>
-    </section>
 
-    <section id="bonus" class="bonus">
-        <div class="bonus-desc">
-            <h1>Bonus</h1>
+
+
+
+<!-- Specialties Section -->
+<section id="specialties">
+    <div class="specialties-title-container">
+        <h2 id="specialties-title">Specialties<span class="underline"></span></h2>
+    </div>
+    <div class="specialties-list-container">
+        <div class="specialties-list">
+            <p>Proficient in:</p>
             <ul>
-                <li>fun valo gameplay</li>
                 <li>
-                    <div class="bonus-video-container">
-                        <video src="/videoport.mp4" controls autoplay muted class="bonus-video"></video>
-                    </div>
+                    <img src="htmll.webp" alt="HTML">
+                    <a href="https://www.w3schools.com/html/" target="_blank">HTML</a>
                 </li>
-                <br>
-                <li>listen to this music!</li>
                 <li>
-                    <audio controls loop>
-                        <source src="/music.mp3" type="audio/mpeg">
-                    </audio>
+                    <img src="cssl.webp" alt="CSS">
+                    <a href="https://www.w3schools.com/css/" target="_blank">CSS</a>
+                </li>
+                <li>
+                    <img src="jsl.webp" alt="JavaScript">
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">JavaScript</a>
+                </li>
+                <li>
+                    <img src="phpl.webp" alt="PHP">
+                    <a href="https://www.php.net/" target="_blank">PHP</a>
+                </li>
+                <li>
+                    <img src="javal.webp" alt="Java">
+                    <a href="https://www.oracle.com/java/" target="_blank">Java</a>
                 </li>
             </ul>
         </div>
-    </section>
-    
-    
-    
-    <section id="html-activities" class="html-activities">
-        <div class="html-activities-desc">
-            <h1>HTML Activities</h1>
-            <a href="/fashion.html" target="_blank">Fashion Blog</a>
-            <a href="/recipe.html" target="_blank">Healthy Recipes</a>
+    </div>
+</section>
+<!-- Load JavaScript after the section -->
+<script src="js/specialties_section_animation.js"></script>
+
+
+
+
+    <!-- Extras Section -->
+<section id="extras">
+    <h2>Extras</h2>
+    <div class="extra-link">
+        <a href="fashion.html" target="_blank">Fashion Blog</a>
+        <div class="extra-image">
+            <img src="fashionpic.avif" alt="Fashion Blog Image">
         </div>
-    </section>
+    </div>
+    <div class="extra-link">
+        <a href="recipe.html" target="_blank">Healthy Recipes</a>
+        <div class="extra-image">
+            <img src="healthypic.jpg" alt="Healthy Recipes Image">
+        </div>
+    </div>
+    <div class="extra-link">
+        <a href="woodruff.html" target="_blank">Woodruff Portfolio</a>
+        <div class="extra-image">
+            <img src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-2/travel.jpeg" alt="Woodruff Portfolio Image">
+        </div>
+    </div>
+
+    <!-- TV Show Search Feature -->
+    <div id="tv-show-search">
+        <h3>You might be able to search your fav show here!</h3>
+        <input type="text" id="search-input" placeholder="Enter show name..." />
+        <button id="search-btn">Search</button>
+        <!-- Scrollable Results -->
+        <ul id="search-results"></ul>
+    </div>
+
+    <script src="js/extras_section_animation.js"></script>
+    <script src="js/tv-show-search.js"></script>
+</section>
+
+
+<!-- Contact Section -->
+<section id="contact">
+    <div class="contact-content">
+        <h2 id="contact-title">Contact Me<span class="underline"></span></h2>
+        <div class="contact-form">
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email address">
+            </div>
+            <div class="form-group">
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" required placeholder="Write your message here..."></textarea>
+            </div>
+            <!-- Wrap the button with an anchor tag -->
+            <a href="submission_complete.html">
+                <button type="submit" class="submit-btn">Submit</button>
+            </a>
+        </div>
+    </div>
     
+</section>
+<script src="js/contact_section_animation.js"></script>
+
+
 </body>
 </html>
